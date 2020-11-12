@@ -21,8 +21,12 @@ RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube
 RUN mkdir -p /deepspeech/vad
 WORKDIR /deepspeech
 
+# llwytho lawr modelau DeepSpeech Cymraeg techiaith...
 RUN wget https://github.com/techiaith/docker-deepspeech-cy/releases/download/20.09/techiaith_bangor_20.09.pbmm
 RUN wget https://github.com/techiaith/docker-deepspeech-cy/releases/download/20.09/techiaith_bangor_transcribe_20.09.scorer
+
+# ffeil sain byr ar gyfer profi...
+RUN wget https://raw.githubusercontent.com/techiaith/trawsgrifiwr-windows/master/TranscriberConsole/speech.wav
 
 ADD trawsgrifio.sh .
 ADD vad_transcriber vad/
