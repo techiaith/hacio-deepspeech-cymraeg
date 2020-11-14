@@ -1,6 +1,6 @@
 # Hacio DeepSpeech Cymraeg
 
-Enghreifftiau syml iawn o ddefnyddio modelau DeepSpeech Cymraeg techiaith i greu trawsgrifiadau o fideos YouTube...
+Enghreifftiau syml iawn o ddefnyddio modelau DeepSpeech Cymraeg techiaith (https://github.com/techiaith/docker-deepspeech-cy/releases) i greu trawsgrifiadau o fideos YouTube...
 
 
 ## Trawsgrifiad ar gyfer Fideo o YouTube
