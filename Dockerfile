@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt update \
- && apt install -y python python3 python3-pip python3-dev wget curl vim ffmpeg sox locales \
+ && apt install -y python python3 python3-pip python3-dev wget curl vim ffmpeg sox alsa-utils locales \
  && pip3 install --upgrade pip
 
 # Set the locale
@@ -28,6 +28,8 @@ RUN wget https://github.com/techiaith/docker-deepspeech-cy/releases/download/20.
 # ffeil sain byr ar gyfer profi...
 RUN wget https://raw.githubusercontent.com/techiaith/trawsgrifiwr-windows/master/TranscriberConsole/speech.wav
 
-ADD trawsgrifio.sh .
+ADD *.sh .
+ADD *.py .
+ADD speech.wav .
 ADD vad_transcriber vad/
 

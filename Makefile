@@ -4,7 +4,11 @@ build:
 
 run:
 	docker run --name hacio-deepspeech --restart=always \
-		-it techiaith/hacio-deepspeech bash
+		-it \
+		-v /tmp/.X11-unix:/tmp/.X11-unix \
+		-e DISPLAY=unix$DISPLAY \
+		--device /dev/snd \
+		techiaith/hacio-deepspeech bash
 
 stop:
 	-docker stop hacio-deepspeech
